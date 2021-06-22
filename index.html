@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ar" translate="no" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <header>
+        <button onclick="Sopen()" aria-label="زر البحث"><i class="fas fa-search fa-lg"></i></button>
+        <button onclick="openNav()" aria-label="زر القوائم" style="margin-right: auto;"><i class="fas fa-bars fa-lg"></i></button>
+    </header>
+
+    <!-- Search pop up-->
+    <div class="search-container none animation" id="search">
+        <input type="search" name="" id="ss" placeholder="  محرك البحث" class="search">
+        <button onclick="main6(); localStorage.setItem('search',document.getElementById('ss').value)" style="background: none; border: none;"><i class="fas fa-search fa-lg" style="cursor: pointer; color: #ffffff;padding: 10px;"></i></button>
+    </div>
+       
+    <!-- Side navbar-->
+    <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <i onclick="main()" class="fas fa-home fa-lg"></i>
+        <i onclick="main2()" class="fas fa-bars fa-lg"></i>
+        <i onclick="main3()" class="fas fa-heart fa-lg"></i>
+      </div>
+
+
+    <main id="m1" class="">
+
+         
+<h1 class="mgt">التصنيفات</h1>
+<div class="grid-container animation">
+    <a ><div class="grid-item"><img src="img/swords.png" alt=""><p>أكشن</p></div></a>
+    <a ><div class="grid-item"><img src="img/theater.png" alt=""><p>دراما</p></div></a>
+    <a ><div class="grid-item"><img src="img/skull.png" alt=""><p>رعب</p></div></a>
+    <a ><div class="grid-item"><img src="img/super.png" alt=""><p>شونين</p></div></a>
+    <a ><div class="grid-item"><img src="img/happy.png" alt=""><p>كوميديا</p></div></a>
+    <a ><div class="grid-item"><img src="img/carnival-mask.png" alt=""><p>غموض</p></div></a>
+    <a ><div class="grid-item"><img src="img/heart-shape-outline-with-lining-at-right-edge.png" alt=""><p>رومانسي</p></div></a>
+    <a ><div class="grid-item"><img src="img/sports.png" alt=""><p>رياضي</p></div></a>
+    <a ><div class="grid-item"><img src="img/university.png" alt=""><p>مدرسي</p></div></a>
+  </div>
+<h1 class="mgt">الأنميات الأكثر شعبية<i class="fas fa-star fa-md"></i></h1>
+
+<div class="list-wrapper animation">
+<ul class="list">
+
+<!--Flexbox list item-->
+
+<li class="list-item">
+    <div class="list-item__image">
+        <img src="img/images.jpg" alt="Thumbnail">
+    </div>
+    <div class="list-item__content">
+        <i onclick="icon(this)" id="1" class="fas fa-heart fa-lg" style="float: left;position: relative;top: 10px; "></i>
+        <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main4()">هجوم العمالقة</h4>
+    </div>
+    </li>
+    <li class="list-item">
+        <div class="list-item__image">
+            <img src="img/images.jpg" alt="Thumbnail">
+        </div>
+        <div class="list-item__content">
+            <i onclick="icon(this)" id="2" class="fas fa-heart fa-lg" style="float: left;position: relative;top: 10px; "></i>
+            <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main4()">هجوم العمالقة</h4>
+        </div>
+        </li>
+        <li class="list-item">
+            <div class="list-item__image">
+                <img src="img/images.jpg" alt="Thumbnail">
+            </div>
+            <div class="list-item__content">
+                <i onclick="icon(this)" id="3" class="fas fa-heart fa-lg" style="float: left;position: relative;top: 10px; "></i>
+                <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main4()">هجوم العمالقة</h4>
+            </div>
+            </li>
+            <li class="list-item">
+                <div class="list-item__image">
+                    <img src="img/images.jpg" alt="Thumbnail">
+                </div>
+                <div class="list-item__content">
+                    <i onclick="icon(this)" id="4" class="fas fa-heart fa-lg" style="float: left;position: relative;top: 10px; "></i>
+                    <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main4()">هجوم العمالقة</h4>
+                </div>
+                </li>
+                <li class="list-item">
+                    <div class="list-item__image">
+                        <img src="img/images.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="list-item__content">
+                        <i onclick="icon(this)" id="5" class="fas fa-heart fa-lg" style="float: left;position: relative;top: 10px; "></i>
+                        <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main4()">هجوم العمالقة</h4>
+                    </div>
+                    </li>
+</ul>
+</div>
+<button class="btn" style="margin-top: 20px;">اظهر المزيد</button>
+
+</main>
+
+
+<main id="m2" class="none">
+
+
+    <div style="background-color: #212121; padding: 20px; margin-top: 20px;" class="animation">
+        النوع
+        <select name="" id="types">
+            <option value="all">جميع الأنميات</option>
+            <option value="action">أكشن</option>
+            <option value="drama">دراما</option>
+            <option value="horror">رعب</option>
+            <option value="shounen">شونين</option>
+            <option value="comedy">كوميديا</option>
+            <option value="mistery">غموض</option>
+            <option value="romance">رومانسي</option>
+            <option value="sport">رياضي</option>
+            <option value="school">مدرسي</option>
+        </select>
+        
+        
+        <button class="btn2" onclick="y()">ابحث</button>
+        </div>
+        
+        
+        
+            <h1 class="center mgt" id="title">جميع الأنميات</h1>
+        
+            <div class="list-wrapper  animation">
+                <ul class="list" id="videos">
+            
+                <!--Flexbox list item-->
+                <a onclick="main4()">
+                <li class="list-item">
+                    <div class="list-item__image">
+                        <img src="img/images.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="list-item__content">
+                        <h4>هجوم العمالقة</h4>
+                        <p>الحلقات 13214</p>
+                    </div>
+                </li>
+            </a>
+                <!--Flexbox list item-->
+                <li class="list-item">
+                    <div class="list-item__image">
+                        <img src="img/images.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="list-item__content">
+                        <h4>ون بيس</h4>
+                        <p>جميع الحلقات </p>
+                    </div>
+                </li>
+            
+                <!--Flexbox list item-->
+                <li class="list-item">
+                    <div class="list-item__image">
+                        <img src="img/images.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="list-item__content">
+                        <h4>تجرربببببببببببببة</h4>
+                        <p>اوكي طيب</p>
+                    </div>
+                </li>
+            
+                <!--Flexbox list item-->
+                <li class="list-item">
+                    <div class="list-item__image">
+                        <img src="img/images.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="list-item__content">
+                        <h4>كاكتاسو نو هاجامي قاعد االف</h4>
+                        <p>الحلقة -1</p>
+                    </div>
+                </li>
+            
+            </ul>
+            </div>
+            <button onclick="more()" class="btn animation" style="margin-top: 20px;">اظهر المزيد</button>
+            
+
+</main>
+
+<main id="m3" class="none">
+
+    
+
+    <style>
+        .pie-chart {
+            background:
+                radial-gradient(
+                    circle closest-side,
+                    transparent 58%,
+                    #212121 0
+                ),
+                conic-gradient(
+                    #0150f3 0,
+                    #0150f3 50%,
+                    #f28e2c 0,
+                    #f28e2c 50%
+            );
+            position: relative;
+            width: 100%;
+            min-height: 350px;
+            margin-top: 20px;
+            color: #fff;
+        }
+        .pie-chart h2 {
+            position: absolute;
+            margin: 1rem;
+        }
+
+        .pie-chart figcaption {
+            position: absolute;
+            bottom: 1em;
+            right: 1em;
+            font-size: smaller;
+            text-align: right;
+        }
+        .pie-chart span:after {
+            display: inline-block;
+            content: "";
+            width: 0.8em;
+            height: 0.8em;
+            margin-left: 0.4em;
+            height: 0.8em;
+            border-radius: 0.2em;
+            background: currentColor;
+        }
+    </style>
+
+    <figure class="pie-chart">
+        <h2>احصائيات المشاهدات</h2>
+        <figcaption>
+            تمت مشاهدتها 214 <span style="color:#0150f3"></span><br>
+            لم تكمل مشاهدتها 149 <span style="color:#f28e2c"></span>
+        </figcaption>
+    </figure>
+
+        <!--------------------------------------------------------------------------->
+
+
+
+
+        <h1 class="mgt">أنمياتي المفضلة <i class="fas fa-heart fa-md"></i></h1>
+
+        <div class="list-wrapper ">
+            <ul class="list">
+        
+                <li class="list-item">
+                    <div class="list-item__image">
+                        <img src="img/images.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="list-item__content">
+                        <i onclick="icon(this)" id="1" class="fas fa-heart fa-lg" style="float: left;position: relative;top: 10px; "></i>
+                        <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main5()">هجوم العمالقة</h4>
+                    </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-item__image">
+                            <img src="img/images.jpg" alt="Thumbnail">
+                        </div>
+                        <div class="list-item__content">
+                            <i onclick="icon(this)" id="2" class="fas fa-heart fa-lg" style="float: left;position: relative;top: 10px; "></i>
+                            <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main5()">هجوم العمالقة</h4>
+                        </div>
+                        </li>
+
+        
+        </ul>
+        </div>
+        <button class="btn" style="margin-top: 20px;">اظهر المزيد</button>
+
+
+
+
+        <!--------------------------------------------------------------------------->
+    <h1 class="mgt">أخر المشاهدات <i class="fas fa-clock fa-md"></i></h1>
+
+    <div class="list-wrapper ">
+        <ul class="list">
+    
+            <li class="list-item">
+                <div class="list-item__image">
+                    <img src="img/images.jpg" alt="Thumbnail">
+                </div>
+                <div class="list-item__content">
+                    <i onclick="watched(this)" id="1e1" class="fas fa-eye fa-lg" style="float: left;position: relative;top: 10px; "></i>
+                    <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main5()">هجوم العمالقة</h4>
+                </div>
+                </li>                <li class="list-item">
+                    <div class="list-item__image">
+                        <img src="img/images.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="list-item__content">
+                        <i onclick="watched(this)" id="1e1" class="fas fa-eye fa-lg" style="float: left;position: relative;top: 10px; "></i>
+                        <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main5()">هجوم العمالقة</h4>
+                    </div>
+                    </li>
+    
+    </ul>
+    </div>
+    <button class="btn" style="margin-top: 20px;">اظهر المزيد</button>
+    
+
+
+
+</main>
+<main id="m4" class="none">
+
+
+
+    <div  style="padding: 20px; background-color: #212121; margin-top: 20px;">
+
+
+        <img src="img/n.jpg" alt="" style=" display: block; margin: auto;width: 50%; max-width: 300px;">
+        <h1 class="center">ناروتو</h1>
+        <h3 class="center" >The old man road</h3>
+        <h3 class="center" style="margin-top: 10px;">ㅗ자밍머</h3>
+        <h4 class="center" style="margin-top: 10px;">مكتمل</h4>
+        <span class="center" style="display: block; margin-top: 20px;">يلتقي بطل هذه القصه يلتقي بطل هذه القصهيلتقي بطل هذه القصه يلتقي بطل هذه القصه</span>
+    
+    
+    </div>
+        <h2 class="mgt">الحلقات 243</h2>
+    
+    
+        <div class="list-wrapper shadow animation">
+            <ul class="list" id="videos">
+        
+
+                <li class="list-item">
+                    <div class="list-item__image">
+                        <img src="img/images.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="list-item__content">
+                        <i onclick="watched(this)" id="1e1" class="fas fa-eye fa-lg" style="float: left;position: relative;top: 10px; "></i>
+                        <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main5()">هجوم العمالقة</h4>
+                    </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-item__image">
+                            <img src="img/images.jpg" alt="Thumbnail">
+                        </div>
+                        <div class="list-item__content">
+                            <i onclick="watched(this)" id="1e2" class="fas fa-eye fa-lg" style="float: left;position: relative;top: 10px; "></i>
+                            <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main5()">هجوم العمالقة</h4>
+                        </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="list-item__image">
+                                <img src="img/images.jpg" alt="Thumbnail">
+                            </div>
+                            <div class="list-item__content">
+                                <i onclick="watched(this)" id="1e3" class="fas fa-eye fa-lg" style="float: left;position: relative;top: 10px; "></i>
+                                <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main5()">هجوم العمالقة</h4>
+                            </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__image">
+                                    <img src="img/images.jpg" alt="Thumbnail">
+                                </div>
+                                <div class="list-item__content">
+                                    <i onclick="watched(this)" id="1e4" class="fas fa-eye fa-lg" style="float: left;position: relative;top: 10px; "></i>
+                                    <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main5()">هجوم العمالقة</h4>
+                                </div>
+                                </li>
+        
+        </ul>
+        </div>
+    
+</main>
+
+
+<main id="m5">
+
+
+</main>
+
+<main id="m6">
+
+    <div class="list-wrapper animation">
+        <ul class="list">
+        
+
+        
+        <li class="list-item">
+            <div class="list-item__image">
+                <img src="img/images.jpg" alt="Thumbnail">
+            </div>
+            <div class="list-item__content">
+                <i onclick="icon(this)" id="1" class="fas fa-heart fa-lg" style="float: left;position: relative;top: 10px; "></i>
+                <h4 onclick="localStorage.setItem(this.previousSibling.previousSibling.id,'0'); main4()">هجوم العمالقة</h4>
+            </div>
+            </li>
+
+
+        </ul>
+    </div>
+
+
+</main>
+
+
+
+
+
+</body>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    function Sopen(){
+        document.getElementById('search').classList.toggle('none');
+    }
+    function main(){
+        document.getElementById('m1').classList.remove('none');
+        document.getElementById('m2').classList.add('none');
+        document.getElementById('m3').classList.add('none');
+        document.getElementById('m4').classList.add('none');
+        document.getElementById('m5').classList.add('none');
+        document.getElementById('m6').classList.add('none');
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    function main2(){
+        document.getElementById('m1').classList.add('none');
+        document.getElementById('m2').classList.remove('none');
+        document.getElementById('m3').classList.add('none');
+        document.getElementById('m4').classList.add('none');
+        document.getElementById('m5').classList.add('none');
+        document.getElementById('m6').classList.add('none');
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    function main3(){
+        document.getElementById('m1').classList.add('none');
+        document.getElementById('m2').classList.add('none');
+        document.getElementById('m3').classList.remove('none');
+        document.getElementById('m4').classList.add('none');
+        document.getElementById('m5').classList.add('none');
+        document.getElementById('m6').classList.add('none');
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    function main4(){
+        document.getElementById('m1').classList.add('none');
+        document.getElementById('m2').classList.add('none');
+        document.getElementById('m3').classList.add('none');
+        document.getElementById('m4').classList.remove('none');
+        document.getElementById('m5').classList.add('none');
+        document.getElementById('m6').classList.add('none');
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    function main5(){
+        document.getElementById('m1').classList.add('none');
+        document.getElementById('m2').classList.add('none');
+        document.getElementById('m3').classList.add('none');
+        document.getElementById('m4').classList.add('none');
+        document.getElementById('m5').classList.remove('none');
+        document.getElementById('m6').classList.add('none');
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    function main6(){
+        document.getElementById('m1').classList.add('none');
+        document.getElementById('m2').classList.add('none');
+        document.getElementById('m3').classList.add('none');
+        document.getElementById('m4').classList.add('none');
+        document.getElementById('m5').classList.add('none');
+        document.getElementById('m6').classList.remove('none');
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+
+    // on heart click
+    function icon(a){
+        if (localStorage.getItem(a.id) === null) {
+            localStorage.setItem(a.id,'0');
+            a.style.color = "red"; 
+    }else{
+            localStorage.removeItem(a.id);
+            a.style.color = "white"; }
+          }
+
+
+
+          // on page start add hearts colors
+          var icons = document.getElementById('m1').getElementsByTagName("i");
+        for(var i = 0; i < icons.length; i++){
+         if (localStorage.getItem(icons[i].id) !== null) {
+         icons[i].style.color = "red"; }}
+
+
+
+         // Call this when you call for more lists to show hearts
+            function hearts(){
+                var icons = document.getElementById('m1').getElementsByTagName("i");
+    for(var i = 0; i < icons.length; i++){
+         if (localStorage.getItem(icons[i].id) !== null) {
+         icons[i].style.color = "red"; }}
+            }
+
+            // when eye is clicked
+            function watched(j){
+        if (localStorage.getItem(j.id) === null) {
+            localStorage.setItem(j.id,'0');
+            j.style.color = "#007bff"; 
+    }else{
+            localStorage.removeItem(j.id);
+            j.style.color = "white"; }
+          }
+
+           // call this when you want to show eyes colors
+            function eyes(){
+                var icons = document.getElementById('m4').getElementsByTagName("i");
+    for(var i = 0; i < icons.length; i++){
+         if (localStorage.getItem(icons[i].id) !== null) {
+         icons[i].style.color = "#007bff"; }}
+            }
+
+                // On page start
+            var icons = document.getElementById('m4').getElementsByTagName("i");
+    for(var i = 0; i < icons.length; i++){
+         if (localStorage.getItem(icons[i].id) !== null) {
+         icons[i].style.color = "#007bff"; }}
+
+
+            /*  log all local storage keys and values
+            for ( var i = 0, len = localStorage.length; i < len; ++i ) {
+  console.log( localStorage.key( i ) + ": " + localStorage.getItem( localStorage.key( i ) ) );
+}
+*/
+
+    </script>
+
+
+</html>
