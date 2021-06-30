@@ -1,0 +1,275 @@
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  background-color: #181818;
+  color: #ffffff;
+}
+
+header{
+  background-color: #202020;
+  display: flex;
+}
+
+header button{
+  background: none;
+  color: #d1d3e2;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* side nav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav i {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.sidenav a{
+    
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+
+
+.sidenav i:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*-----*/
+.animation{
+  animation-duration: 0.25s;
+  animation-name: createBox;
+
+}
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.search{
+  width: 85%;
+  font-size: 20px;
+  border-color: #4e73df;
+  background-color: #f8f9fc;
+  outline-width: 10px;
+  outline-color:  #4e73df;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+
+}
+.search-container{
+  background-color: #202020;
+  outline-style: dashed;
+  outline-color: #818181;
+  width: 90%;
+  padding: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  
+}
+.none{
+  display: none;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  background-color: #212121;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 2px;
+  font-size: small;
+  text-align: center;
+}
+@media only screen and (min-width: 800px) {
+  .grid-item  {
+   font-size: large;
+  }
+  .grid-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+}
+.grid-item img{
+  height: 100%;
+  width: 100%;
+  max-height: 200px;
+  max-width: 150px;
+
+
+}
+.mgt{
+  margin-top: 60px;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.list{
+  background-color: #212121;
+  margin: 0;
+  padding: 15px;
+  border-radius: 2px;
+}
+.list .list-item{
+  display: flex;
+  padding: 10px 5px;
+  width: 100%;
+}
+.list .list-item__image{
+  flex-shrink: 0;
+  height: 80px;
+}
+.list .list-item__image img{
+  width: 70px;
+  height: 70px;
+}
+
+.list .list-item__content{
+  flex-grow: 1;
+  padding: 0 20px;
+}
+.list .list-item__content h4{
+  margin: 0;
+  font-size: 18px;
+  margin-top: 15px;
+  display: inline;
+}
+.list .list-item__content p{
+  margin-top: 5px;
+  color: #AAA;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.btn{
+  display: block;
+  margin: auto;
+  width: 200px;
+  color: #fff;
+  background-color: #373737;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-appearance: button;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: 16px   
+}
+.btn2{
+  padding: 10px;
+  background-color: #373737;
+  color: #ffffff;
+  border-radius: 15px;
+}
+.red{
+  color: red;
+}
+.center{
+  text-align: center;
+  justify-content: center;
+}
+
+.vidbox{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 0;
+}
+.vidbox iframe{
+  position: absolute;
+width: 100%;
+height: 100%;
+max-width: 800px;
+max-height: 600px;
+margin-top: 5px;
+
+}
+
+.autocomplete-items div{
+
+  padding: 10px;
+  background-color: #181818;
+  border-bottom: 1px solid #202020; 
+
+}
+.fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-.0667em}
+.fa-arrow-left:before{content:"\f060"}
+.fa-search:before{content:"\f002"}
+@font-face{font-family:"Font Awesome 5 Brands";font-style:normal;font-weight:400;font-display:block;src:url(webfonts/fa-brands-400.eot);src:url(webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(webfonts/fa-brands-400.woff2) format("woff2"),url(webfonts/fa-brands-400.woff) format("woff"),url(webfonts/fa-brands-400.ttf) format("truetype"),url(webfonts/fa-brands-400.svg#fontawesome) format("svg")}.fab{font-family:"Font Awesome 5 Brands"}@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:400;font-display:block;src:url(webfonts/fa-regular-400.eot);src:url(webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(webfonts/fa-regular-400.woff2) format("woff2"),url(webfonts/fa-regular-400.woff) format("woff"),url(webfonts/fa-regular-400.ttf) format("truetype"),url(webfonts/fa-regular-400.svg#fontawesome) format("svg")}.fab,.far{font-weight:400}@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:block;src:url(webfonts/fa-solid-900.eot);src:url(webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(webfonts/fa-solid-900.woff2) format("woff2"),url(webfonts/fa-solid-900.woff) format("woff"),url(webfonts/fa-solid-900.ttf) format("truetype"),url(webfonts/fa-solid-900.svg#fontawesome) format("svg")}.fa,.far,.fas{font-family:"Font Awesome 5 Free"}.fa,.fas{font-weight:900}
+
+.fa, .fas {
+  font-weight: 900;
+}
+.fa, .far, .fas {
+  font-family: "Font Awesome 5 Free";
+}
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: .75em;
+  vertical-align: -.0667em;
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.fa, .fas {
+  font-weight: 900;
+}
+.prompt{
+  margin-top: 30px;
+  background-color: #212121;
+}
