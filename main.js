@@ -7,6 +7,7 @@ var titles = [
     {name: "هايكيو الجزء الثاني",  img: "img/hai2.jpg", genre: "شونين", genre2: "مدرسي", genre3: "كوميديا", genre4: "رياضي", genre5: "", genre6: "", genre7: "", genre8: "", genre9: ""},
     {name: "هايكيو الجزء الثالث",  img: "img/hai3.jpg", genre: "شونين", genre2: "مدرسي", genre3: "كوميديا", genre4: "رياضي", genre5: "", genre6: "", genre7: "", genre8: "", genre9: ""},
     {name: "هايكيو الجزء الرابع",  img: "img/hai4.jpg", genre: "شونين", genre2: "مدرسي", genre3: "كوميديا", genre4: "رياضي", genre5: "", genre6: "", genre7: "", genre8: "", genre9: ""},
+    {name: "مذكرة الموت",  img: "img/deathnote.jpg", genre: "شونين", genre2: "مدرسي", genre3: "رعب", genre4: "غموض", genre5: "", genre6: "", genre7: "", genre8: "", genre9: ""},
 
   ];
 
@@ -37,6 +38,7 @@ var episode = [
     {name: "هجوم العمالقة الجزء الأول", url: "https://www.solidfiles.com/e/zGpeXVZYKvVgk", img: "img/attack1.jpg", alt: "حلقة 23" },
     {name: "هجوم العمالقة الجزء الأول", url: "https://www.solidfiles.com/e/L5NKPXNWWY7xW", img: "img/attack1.jpg", alt: "حلقة 24" },
     {name: "هجوم العمالقة الجزء الأول", url: "https://www.solidfiles.com/e/4amQGv3Rjj8K7", img: "img/attack1.jpg", alt: "حلقة 25" },
+    
     {name: "هايكيو الجزء الأول", url: "https://www.solidfiles.com/e/nDgXLGkMVzBvv", img: "img/hai1.jpg", alt: "حلقة 1" },
     {name: "هايكيو الجزء الأول", url: "https://www.solidfiles.com/e/dVgXL8ajjk3nA", img: "img/hai1.jpg", alt: "حلقة 2" },
     {name: "هايكيو الجزء الأول", url: "https://www.solidfiles.com/e/azgXyz373v525", img: "img/hai1.jpg", alt: "حلقة 3" },
@@ -135,6 +137,44 @@ var episode = [
     {name: "ون بيس", url: "https://www.solidfiles.com/e/e6zBaLkL3nZ3n", img: "img/onepiece1.jpg", alt: "حلقة 2" },
     {name: "ون بيس", url: "https://www.solidfiles.com/e/w376ymkmQNXg3", img: "img/onepiece1.jpg", alt: "حلقة 3" },
 
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/L57BKg6353exe", img: "img/deathnote.jpg", alt: "حلقة 1" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/5aexmw2arBAPX", img: "img/deathnote.jpg", alt: "حلقة 2" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/4a6x7A37n7KRN", img: "img/deathnote.jpg", alt: "حلقة 3" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/yRKNzqxaAmpNa", img: "img/deathnote.jpg", alt: "حلقة 4" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/L57vaj2QRp484", img: "img/deathnote.jpg", alt: "حلقة 5" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/nG6RPpMAKVqxw", img: "img/deathnote.jpg", alt: "حلقة 6" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/r6Dq43XvQm8Gv", img: "img/deathnote.jpg", alt: "حلقة 7" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/Y8dm6BGZ8WNWQ", img: "img/deathnote.jpg", alt: "حلقة 8" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/nG6Rr45w2Wxgz", img: "img/deathnote.jpg", alt: "حلقة 9" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/2GWxNB3qAYyen", img: "img/deathnote.jpg", alt: "حلقة 10" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/Y8dm6D6z2DVBz", img: "img/deathnote.jpg", alt: "حلقة 11" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/aZRjdwDzAxWrL", img: "img/deathnote.jpg", alt: "حلقة 12" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/gnPG8jLWv6kBQ", img: "img/deathnote.jpg", alt: "حلقة 13" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/XB7aqjeq4wgN7", img: "img/deathnote.jpg", alt: "حلقة 14" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/M2mRWd5kmmBw6", img: "img/deathnote.jpg", alt: "حلقة 15" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/pWMXpYk2g2AZL", img: "img/deathnote.jpg", alt: "حلقة 16" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/K3aYdkWKP4rdq", img: "img/deathnote.jpg", alt: "حلقة 17" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/ABeQGyZBPBAmv", img: "img/deathnote.jpg", alt: "حلقة 18" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/qVzpm3dn8dGLm", img: "img/deathnote.jpg", alt: "حلقة 19" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/2GxzXQMWm2YzW", img: "img/deathnote.jpg", alt: "حلقة 20" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/pWMv7BkDyADXj", img: "img/deathnote.jpg", alt: "حلقة 21" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/RKMdwLvRx25Bk", img: "img/deathnote.jpg", alt: "حلقة 22" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/By8YVMr6g38xq", img: "img/deathnote.jpg", alt: "حلقة 23" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/M2mRWjmrLKq8K", img: "img/deathnote.jpg", alt: "حلقة 24" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/p5prPRDrdGGVz", img: "img/deathnote.jpg", alt: "حلقة 25" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/ZQGWZzRvaQnna", img: "img/deathnote.jpg", alt: "حلقة 26" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/yRKg67ajjvwpG", img: "img/deathnote.jpg", alt: "حلقة 27" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/vzBednBQ8Mmqk", img: "img/deathnote.jpg", alt: "حلقة 28" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/DKD8Xp26gnM8A", img: "img/deathnote.jpg", alt: "حلقة 29" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/qVjrdyNNQQDyL", img: "img/deathnote.jpg", alt: "حلقة 30" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/mDBxnMWXGD8NB", img: "img/deathnote.jpg", alt: "حلقة 31" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/P4R2P8rLYY233", img: "img/deathnote.jpg", alt: "حلقة 32" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/6an7G84p2KgRN", img: "img/deathnote.jpg", alt: "حلقة 33" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/DGDWr4z2NvGxm", img: "img/deathnote.jpg", alt: "حلقة 34" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/kepx6NV45BQBa", img: "img/deathnote.jpg", alt: "حلقة 35" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/ABeQGem38dzD6", img: "img/deathnote.jpg", alt: "حلقة 36" },
+    {name: "مذكرة الموت", url: "https://www.solidfiles.com/e/38xpkr8DjKGWa", img: "img/deathnote.jpg", alt: "حلقة 37" },
+
 ]
 
 
@@ -182,7 +222,7 @@ function FillAndDontGo(params) {
 function TheVideo(params) {
     main3();
     document.getElementById("m3").innerHTML = '';
-    document.getElementById("m3").innerHTML = '<iframe width="100%" height="350" src="'+params+'" frameborder="0" allow="accelerometer; autoplay;  picture-in-picture" allowfullscreen></iframe>';
+    document.getElementById("m3").innerHTML = '<iframe width="100%" height="350" src="'+params+'" frameborder="0" allow="accelerometer; autoplay;  picture-in-picture" allowfullscreen sandbox="allow-scripts"></iframe>';
 
 }
 
@@ -326,7 +366,7 @@ function autocomplete(inp, arr) {
   }
   
   /*An array containing all the country names in the world:*/
-  var anie = ["هجوم العمالقة الجزء الأول","هنتر اكس هنتر","ناروتو","ون بيس","هايكيو الجزء الأول","هايكيو الجزء الثالث","هايكيو الجزء الثاني","هايكيو الجزء الرابع","Zimbabwe","Zimbabwe","Zimbabwe","Zimbabwe","Zimbabwe","Zimbabwe","Zimbabwe"];
+  var anie = ["هجوم العمالقة الجزء الأول","هنتر اكس هنتر","ناروتو","ون بيس","هايكيو الجزء الأول","هايكيو الجزء الثالث","هايكيو الجزء الثاني","هايكيو الجزء الرابع","مذكرة الموت","Zimbabwe","Zimbabwe","Zimbabwe","Zimbabwe","Zimbabwe","Zimbabwe"];
   
   /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
   autocomplete(document.getElementById("myInput"), anie);
